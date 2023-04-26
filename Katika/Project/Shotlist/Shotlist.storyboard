@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ShotlistVC-->
+        <scene sceneID="8oJ-Vy-VIM">
+            <objects>
+                <viewController storyboardIdentifier="rootVc" id="U22-i9-A3U" customClass="Shotlist_VC" customModule="Katika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oqc-Nf-Gl0">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyK-Ib-b0c" customClass="RoundCornerButton" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="850" y="760" width="232" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="primary"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Continue to Export Video">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shotlistIsReady" destination="U22-i9-A3U" eventType="touchUpInside" id="6Pr-lT-opB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNF-2c-D3c">
+                                <rect key="frame" x="200" y="612" width="712" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Edit Shot Scripts">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="editShots" destination="U22-i9-A3U" eventType="touchUpInside" id="zRx-W8-goF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fb4-Zy-hTf">
+                                <rect key="frame" x="8" y="8" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" image="backButton">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <connections>
+                                    <action selector="popBack:" destination="U22-i9-A3U" eventType="touchUpInside" id="L3X-cd-hwO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhO-Ep-WXE">
+                                <rect key="frame" x="1060" y="8" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" image="helpButton">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="helpFunction:" destination="U22-i9-A3U" eventType="touchUpInside" id="1iE-RE-IhU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shotlist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9F-tM-fjn" customClass="RoundCornerLabel" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="60" y="8" width="162" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OeX-5p-0Gj" customClass="RoundCornerView" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="200" y="231" width="712" height="373"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Sod-qW-THq">
+                                        <rect key="frame" x="10" y="10" width="694" height="353"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0Jn-0B-bpC">
+                                            <size key="itemSize" width="325" height="426"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="shotCellId" id="nRQ-0T-IVX" customClass="ShotCollectionViewCell" customModule="Katika" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1.5" width="325" height="350"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3t3-xa-4nF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="325" height="350"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pqP-wQ-QcG">
+                                                            <rect key="frame" x="10" y="40.5" width="305" height="171.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="pqP-wQ-QcG" secondAttribute="height" multiplier="16:9" id="JwY-zz-6wO"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shot 7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zB-dK-uHI">
+                                                            <rect key="frame" x="10" y="10" width="162.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~ 12&quot;" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nd-Yw-n2o">
+                                                            <rect key="frame" x="250" y="10" width="65" height="24"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="24" id="KY2-Do-eD0"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5l7-DK-jG5">
+                                                            <rect key="frame" x="10" y="222" width="305" height="118"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="3zB-dK-uHI" firstAttribute="leading" secondItem="3t3-xa-4nF" secondAttribute="leading" constant="10" id="1Xc-GP-8PA"/>
+                                                        <constraint firstItem="3zB-dK-uHI" firstAttribute="top" secondItem="3t3-xa-4nF" secondAttribute="top" constant="10" id="6X5-lW-rgs"/>
+                                                        <constraint firstItem="pqP-wQ-QcG" firstAttribute="leading" secondItem="3t3-xa-4nF" secondAttribute="leading" constant="10" id="HRF-fn-TX5"/>
+                                                        <constraint firstItem="5l7-DK-jG5" firstAttribute="leading" secondItem="3t3-xa-4nF" secondAttribute="leading" constant="10" id="XDZ-Mp-fdG"/>
+                                                        <constraint firstItem="pqP-wQ-QcG" firstAttribute="top" secondItem="3zB-dK-uHI" secondAttribute="bottom" constant="10" id="Ypf-mK-eT7"/>
+                                                        <constraint firstAttribute="trailing" secondItem="5nd-Yw-n2o" secondAttribute="trailing" constant="10" id="ZUx-Fw-VlU"/>
+                                                        <constraint firstAttribute="bottom" secondItem="5l7-DK-jG5" secondAttribute="bottom" constant="10" id="ar5-LO-PWM"/>
+                                                        <constraint firstItem="3zB-dK-uHI" firstAttribute="width" secondItem="3t3-xa-4nF" secondAttribute="width" multiplier="1:2" id="dZV-Yk-dOG"/>
+                                                        <constraint firstItem="5l7-DK-jG5" firstAttribute="top" secondItem="pqP-wQ-QcG" secondAttribute="bottom" constant="10" id="kHZ-Nt-3uA"/>
+                                                        <constraint firstAttribute="trailing" secondItem="5l7-DK-jG5" secondAttribute="trailing" constant="10" id="lLf-On-4oa"/>
+                                                        <constraint firstItem="5nd-Yw-n2o" firstAttribute="width" secondItem="3t3-xa-4nF" secondAttribute="width" multiplier="1:5" id="puQ-fj-GvO"/>
+                                                        <constraint firstItem="5nd-Yw-n2o" firstAttribute="top" secondItem="3t3-xa-4nF" secondAttribute="top" constant="10" id="sca-ns-p7P"/>
+                                                        <constraint firstAttribute="trailing" secondItem="pqP-wQ-QcG" secondAttribute="trailing" constant="10" id="zXo-Dv-Wpz"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="325" height="350"/>
+                                                <connections>
+                                                    <outlet property="imgView" destination="pqP-wQ-QcG" id="Dvf-rt-JyC"/>
+                                                    <outlet property="lengthLabel" destination="5nd-Yw-n2o" id="M0M-Pb-lx7"/>
+                                                    <outlet property="numberLabel" destination="3zB-dK-uHI" id="cfh-tW-Xky"/>
+                                                    <outlet property="scriptTextView" destination="5l7-DK-jG5" id="AFl-Xd-Llz"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="shotEditingCellId" id="Whz-gp-b9r" customClass="ShotCollectionViewCell" customModule="Katika" customModuleProvider="target">
+                                                <rect key="frame" x="335" y="1.5" width="325" height="350"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0eX-eE-2ZF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="325" height="350"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shot 7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxj-IP-le1">
+                                                            <rect key="frame" x="8" y="8" width="108.5" height="16"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="16" id="SJo-p1-B6G"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jyu-Xo-cTF">
+                                                            <rect key="frame" x="8" y="32" width="309" height="310"/>
+                                                            <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~ 12&quot;" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJh-gW-iQ3">
+                                                            <rect key="frame" x="208.5" y="8" width="108.5" height="16"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="16" id="XLh-2b-2Be"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="bxj-IP-le1" firstAttribute="width" secondItem="0eX-eE-2ZF" secondAttribute="width" multiplier="1:3" id="8sN-uF-5YG"/>
+                                                        <constraint firstItem="bxj-IP-le1" firstAttribute="top" secondItem="0eX-eE-2ZF" secondAttribute="top" constant="8" id="DHD-O0-2tu"/>
+                                                        <constraint firstItem="nJh-gW-iQ3" firstAttribute="top" secondItem="0eX-eE-2ZF" secondAttribute="top" constant="8" id="J9a-c7-TJl"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Jyu-Xo-cTF" secondAttribute="trailing" constant="8" id="KRq-Rq-hEp"/>
+                                                        <constraint firstItem="Jyu-Xo-cTF" firstAttribute="leading" secondItem="0eX-eE-2ZF" secondAttribute="leading" constant="8" id="avk-ec-NXo"/>
+                                                        <constraint firstItem="nJh-gW-iQ3" firstAttribute="width" secondItem="0eX-eE-2ZF" secondAttribute="width" multiplier="1:3" id="eTM-JE-PDh"/>
+                                                        <constraint firstItem="Jyu-Xo-cTF" firstAttribute="top" secondItem="bxj-IP-le1" secondAttribute="bottom" constant="8" id="fIk-Sx-aeh"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Jyu-Xo-cTF" secondAttribute="bottom" constant="8" id="fNr-8O-Xba"/>
+                                                        <constraint firstAttribute="trailing" secondItem="nJh-gW-iQ3" secondAttribute="trailing" constant="8" id="pZi-UD-ft8"/>
+                                                        <constraint firstItem="bxj-IP-le1" firstAttribute="leading" secondItem="0eX-eE-2ZF" secondAttribute="leading" constant="8" id="zqJ-6A-Vf2"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="325" height="350"/>
+                                                <connections>
+                                                    <outlet property="lengthLabel" destination="nJh-gW-iQ3" id="TAg-PY-5nN"/>
+                                                    <outlet property="numberLabel" destination="bxj-IP-le1" id="8Mu-RI-jEb"/>
+                                                    <outlet property="scriptTextView" destination="Jyu-Xo-cTF" id="Loh-xl-Aj9"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLO-fo-BOC">
+                                <rect key="frame" x="993" y="8" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" image="collaborationIcon">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewCommentss:" destination="U22-i9-A3U" eventType="touchUpInside" id="MAN-F8-4fr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqy-kM-BYX" customClass="RoundCornerLabel" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="1039" y="8" width="18" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose a shot to start editing. Once you are done, you can continue to export." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94Z-yX-NEb">
+                                <rect key="frame" x="200" y="169" width="598" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="main_bg"/>
+                        <viewLayoutGuide key="safeArea" id="O6f-RR-oni"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xN8-bL-uk2"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="commentsBadge" destination="Uqy-kM-BYX" id="V50-EI-BbY"/>
+                        <outlet property="commentsButton" destination="BLO-fo-BOC" id="Gp0-O5-m7n"/>
+                        <outlet property="continueButton" destination="lyK-Ib-b0c" id="857-L5-Fkt"/>
+                        <outlet property="editShotsButton" destination="SNF-2c-D3c" id="MH7-xd-cvW"/>
+                        <outlet property="shotsCollectionView" destination="Sod-qW-THq" id="M63-xW-2Bs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAi-eo-PFV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455.93525179856118" y="733.8129496402878"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backButton" width="256" height="256"/>
+        <image name="collaborationIcon" width="256" height="256"/>
+        <image name="helpButton" width="256" height="256"/>
+        <namedColor name="main_bg">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.39215686274509803" green="0.49019607843137253" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

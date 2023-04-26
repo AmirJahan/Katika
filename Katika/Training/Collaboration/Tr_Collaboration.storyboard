@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SYA-FM-aH2">
+    <device id="ipad10_5" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="GyN-L3-B8z">
+            <objects>
+                <viewController storyboardIdentifier="rootVc" modalPresentationStyle="currentContext" id="SYA-FM-aH2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="utr-e5-BtU">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3C9-59-WZb">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="wQY-uA-K98" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="z73-G4-U46"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="How to collaborate on projects in Katika?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SIA-Yj-qem">
+                                <rect key="frame" x="115" y="244" width="754" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary light"/>
+                        <viewLayoutGuide key="safeArea" id="E2M-uE-QRY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CI2-Rh-es2"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxc-IA-9i8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-681.47482014388493" y="-219.42446043165469"/>
+        </scene>
+        <!--Tr Collaboration EndVC-->
+        <scene sceneID="15b-ha-CAD">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="p27-av-ZMt" customClass="Tr_Collaboration_End_VC" customModule="Katika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R4a-QV-RzP">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="This is the end of the collaboration training. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3ab-5y-8M3">
+                                <rect key="frame" x="147" y="217" width="754" height="336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary mid light"/>
+                        <viewLayoutGuide key="safeArea" id="IPX-e2-D5S"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yfU-bG-kKN"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8h4-4d-xTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1354" y="535"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xve-k6-nNd">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="wQY-uA-K98" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Aj-Pr-Q2m">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8RI-14-VLM">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="2WH-4j-h79" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="fQF-Qo-ogu"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="This collaboration button is always on the top right corner." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Nub-aL-Zzb">
+                                <rect key="frame" x="88" y="39" width="809" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LSV-4O-EZS">
+                                <rect key="frame" x="364" y="278" width="256" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="collaborationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="nU4-eq-REs">
+                                        <rect key="frame" x="32" y="32" width="192" height="192"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="primary mid light"/>
+                        <viewLayoutGuide key="safeArea" id="7nC-Xy-yFT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1qs-gc-aYK"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zdg-QD-l8d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25.359712230215827" y="-219.42446043165469"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Qz6-dk-OnZ">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="2WH-4j-h79" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L9S-BW-XAE">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnP-bn-n5a">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="iBx-Bv-DDO" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="tpD-ew-vnm"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1Vr-A4-Obd">
+                                <rect key="frame" x="88" y="108" width="809" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">There are two different collaboration: 
+a) comments, or b) suggestions</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary light"/>
+                        <viewLayoutGuide key="safeArea" id="ksa-ou-rzg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KPh-2j-PWU"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKG-iw-W4b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582.73381294964031" y="-219.42446043165469"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="26o-Cx-ONi">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="iBx-Bv-DDO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="63V-7K-U6d">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riI-59-FAv">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="0Ve-Ec-4yZ" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="NBp-an-2I9"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You can review received suggestions." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xH2-uB-iVU">
+                                <rect key="frame" x="27" y="54" width="931" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comments_or_suggestion.png" translatesAutoresizingMaskIntoConstraints="NO" id="x04-zH-4fb">
+                                <rect key="frame" x="290" y="178" width="405" height="351"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary mid light"/>
+                        <viewLayoutGuide key="safeArea" id="nBM-aF-6bL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rwX-e1-OeT"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nGe-Oq-mQL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71.223021582733821" y="534.53237410071949"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="99V-Lp-HdZ">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="0Ve-Ec-4yZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gS5-OW-lgc">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAD-Jy-I9N">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="p27-av-ZMt" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="QPj-HQ-6AV"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Suggestions are only possible in shots and would completely replace the artworks." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qxt-9x-WWd">
+                                <rect key="frame" x="39" y="179" width="907" height="326.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary light"/>
+                        <viewLayoutGuide key="safeArea" id="hWS-Sx-S0V"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CQZ-ss-1hl"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIX-IE-UwT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668.52517985611507" y="534.53237410071949"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="collaborationIcon" width="256" height="256"/>
+        <image name="comments_or_suggestion.png" width="395" height="505"/>
+        <image name="nextButtonWhite" width="256" height="256"/>
+        <namedColor name="primary">
+            <color red="0.39215686274509803" green="0.49019607843137253" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary light">
+            <color red="0.58823529411764708" green="0.68627450980392157" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary mid light">
+            <color red="0.49019607843137253" green="0.58823529411764708" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

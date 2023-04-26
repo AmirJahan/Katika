@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Break Apart VideoVC-->
+        <scene sceneID="kmm-Dh-Qhd">
+            <objects>
+                <viewController storyboardIdentifier="rootVc" modalPresentationStyle="fullScreen" id="xoo-6z-mxV" customClass="BreakApartVideo_VC" customModule="Katika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nee-iY-zjy">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iSl-Ch-JWq">
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            </containerView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="temp_break_apart.png" translatesAutoresizingMaskIntoConstraints="NO" id="rdh-Qg-6Rp">
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="M2c-XG-PrO">
+                                <rect key="frame" x="8" y="8" width="216" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTI-4h-hoj">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bTI-4h-hoj" secondAttribute="height" multiplier="1:1" id="INs-zj-AW4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" image="backButton">
+                                            <color key="titleColor" name="primary"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="popBack" destination="xoo-6z-mxV" eventType="touchUpInside" id="7Pn-tM-kpR"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Break Apart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATJ-Dh-OMi" customClass="RoundCornerLabel" customModule="Katika" customModuleProvider="target">
+                                        <rect key="frame" x="54" y="0.0" width="162" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="8GN-8A-fJ8"/>
+                                    <constraint firstAttribute="height" constant="44" id="nWG-LU-ZEh"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gCa-Ms-4Mz">
+                                <rect key="frame" x="953" y="369" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hand_touch"/>
+                                <connections>
+                                    <action selector="watchTheVideo" destination="xoo-6z-mxV" eventType="touchUpInside" id="0KJ-ZC-8wq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89W-2o-8AC">
+                                <rect key="frame" x="953" y="369" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hand_touch"/>
+                                <connections>
+                                    <action selector="play_part_3_script:" destination="xoo-6z-mxV" eventType="touchUpInside" id="doY-xy-LCp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cm-iK-q2Q">
+                                <rect key="frame" x="953" y="369" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hand_touch"/>
+                                <connections>
+                                    <action selector="play_part_2_main_parts:" destination="xoo-6z-mxV" eventType="touchUpInside" id="gqT-Ux-Y3L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMQ-yU-od6">
+                                <rect key="frame" x="247" y="591" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="break_this_shot_apart"/>
+                                <connections>
+                                    <action selector="gotoShotBreakDown:" destination="xoo-6z-mxV" eventType="touchUpInside" id="bfJ-dh-45s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hu2-GN-xk9">
+                                <rect key="frame" x="827" y="591" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="break_this_shot_apart"/>
+                                <connections>
+                                    <action selector="gotoShotBreakDown:" destination="xoo-6z-mxV" eventType="touchUpInside" id="40o-D9-DlP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YP-rV-WEg">
+                                <rect key="frame" x="521" y="591" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="break_this_shot_apart"/>
+                                <connections>
+                                    <action selector="gotoShotBreakDown:" destination="xoo-6z-mxV" eventType="touchUpInside" id="tiR-ZF-8SW"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ARp-Cv-hJD">
+                                <rect key="frame" x="219" y="192" width="674" height="391"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Welcome to the training module.
+
+In this module, we will break apart a motion graphics video to learn how it was made. 
+
+Continue to play the video.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="44"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQI-5M-ULY">
+                                <rect key="frame" x="953" y="369" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hand_touch"/>
+                                <connections>
+                                    <action selector="play_part_4_visuals:" destination="xoo-6z-mxV" eventType="touchUpInside" id="Lsa-NL-NeR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTW-cg-3xL" customClass="RoundCornerButton" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="487" y="766" width="139" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Replay This Part"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="replay_this_video" destination="xoo-6z-mxV" eventType="touchUpInside" id="Owf-Bc-x7f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y49-M5-a0A"/>
+                        <color key="backgroundColor" name="main_bg"/>
+                        <constraints>
+                            <constraint firstItem="M2c-XG-PrO" firstAttribute="top" secondItem="y49-M5-a0A" secondAttribute="top" constant="8" id="dyk-WC-pYI"/>
+                            <constraint firstItem="M2c-XG-PrO" firstAttribute="leading" secondItem="y49-M5-a0A" secondAttribute="leading" constant="8" id="rXB-gN-BTA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="intro_text" destination="ARp-Cv-hJD" id="nOA-pm-q58"/>
+                        <outlet property="nav_button" destination="bTI-4h-hoj" id="6YJ-LO-ei1"/>
+                        <outlet property="nav_label" destination="ATJ-Dh-OMi" id="ZlY-JO-R8Q"/>
+                        <outlet property="part_2_main_parts_button" destination="8cm-iK-q2Q" id="4Ps-W0-cfQ"/>
+                        <outlet property="part_3_script_button" destination="89W-2o-8AC" id="wvV-Oh-NdT"/>
+                        <outlet property="part_4_visuals_button" destination="IQI-5M-ULY" id="eOs-7w-1ct"/>
+                        <outlet property="replay_this_part" destination="FTW-cg-3xL" id="qyP-uD-b4U"/>
+                        <outlet property="shot1_button" destination="yMQ-yU-od6" id="FV8-UO-dwt"/>
+                        <outlet property="shot2_button" destination="6YP-rV-WEg" id="KMe-II-vBN"/>
+                        <outlet property="shot3_button" destination="Hu2-GN-xk9" id="Brh-La-KcY"/>
+                        <outlet property="videoConinaterView" destination="iSl-Ch-JWq" id="XQ4-kw-ltF"/>
+                        <outlet property="watch_the_video_button" destination="gCa-Ms-4Mz" id="7Ie-bG-kVi"/>
+                        <segue destination="zt2-hU-bzK" kind="show" identifier="toTrGraphicsSegue" id="mW3-WZ-Fvs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Yj-4E-eLr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-561.15107913669067" y="-614.38848920863313"/>
+        </scene>
+        <!--Tr GraphicsVC-->
+        <scene sceneID="ErJ-8N-1EI">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="zt2-hU-bzK" customClass="Tr_Graphics_VC" customModule="Katika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XUh-nc-PUa">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="overView-artworks.png" translatesAutoresizingMaskIntoConstraints="NO" id="yBg-SJ-UKn">
+                                <rect key="frame" x="20" y="256" width="117" height="316"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgE-Uq-xwc">
+                                <rect key="frame" x="167" y="1038" width="500" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Copy this Piece of Art">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1c0-cO-zMd">
+                                <rect key="frame" x="950" y="353" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                <state key="normal" image="hand_touch">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="0OV-pz-EBY" kind="show" id="2pI-oS-T9f"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qD8-49-GFL">
+                                <rect key="frame" x="8" y="8" width="216" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEp-Hh-vsz">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="jEp-Hh-vsz" secondAttribute="height" multiplier="1:1" id="Xxa-rf-5Vh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" image="backButton">
+                                            <color key="titleColor" name="primary"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="popBack" destination="zt2-hU-bzK" eventType="touchUpInside" id="icQ-Jm-xfU"/>
+                                            <segue destination="2J3-xV-Auu" kind="unwind" unwindAction="unWind:" id="krT-Ts-HEu"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graphics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7O-8M-gz1" customClass="RoundCornerLabel" customModule="Katika" customModuleProvider="target">
+                                        <rect key="frame" x="54" y="0.0" width="162" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="aL2-jI-agI"/>
+                                    <constraint firstAttribute="height" constant="44" id="n70-zg-joJ"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="We break a shot to view its building blocks. This shot is made of 11 layers that are placed over one another." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ePu-l0-8nG">
+                                <rect key="frame" x="253" y="127" width="607" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="eWx-6w-RsJ">
+                                <rect key="frame" x="547" y="696" width="393" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="selectedAnImageView:" destination="zt2-hU-bzK" eventType="valueChanged" id="OtD-G4-hKW"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.20000000298023224" maxValue="3.2000000476837158" translatesAutoresizingMaskIntoConstraints="NO" id="3NO-F5-Qog">
+                                <rect key="frame" x="173" y="696" width="348" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="breakDown:" destination="zt2-hU-bzK" eventType="valueChanged" id="VeS-EY-Ekl"/>
+                                </connections>
+                            </slider>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Use the sliders to push pieces further or cycle through layers that create the shot. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hsx-xJ-Ze5">
+                                <rect key="frame" x="175" y="733" width="763" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EUz-7j-LX6" customClass="CanvasView" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="253" y="271" width="607" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLF-vG-Brz" customClass="RoundCornerButton" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="8" y="67" width="216" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Choose a Different Shot"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="popBack" destination="zt2-hU-bzK" eventType="touchUpInside" id="Prs-Ld-lg7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhA-y3-4qd" customClass="RoundCornerButton" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="868" y="140" width="210" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="primary"/>
+                                <state key="normal" title="Break This Shot Apart"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="breakOrAssemble" destination="zt2-hU-bzK" eventType="touchUpInside" id="ojZ-Fd-lwC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="neV-cJ-wJu"/>
+                        <color key="backgroundColor" name="main_bg"/>
+                        <constraints>
+                            <constraint firstItem="qD8-49-GFL" firstAttribute="top" secondItem="neV-cJ-wJu" secondAttribute="top" constant="8" id="Jue-1c-giu"/>
+                            <constraint firstItem="qD8-49-GFL" firstAttribute="leading" secondItem="neV-cJ-wJu" secondAttribute="leading" constant="8" id="VrZ-7r-Yth"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3x0-eO-bnH"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="breakOrAssembleButton" destination="dhA-y3-4qd" id="qXZ-Oy-3eW"/>
+                        <outlet property="canvas" destination="EUz-7j-LX6" id="W57-e7-1mX"/>
+                        <outlet property="continueButton" destination="1c0-cO-zMd" id="Pef-y4-DoM"/>
+                        <outlet property="mainText" destination="ePu-l0-8nG" id="V76-ex-7pk"/>
+                        <outletCollection property="notes" destination="hsx-xJ-Ze5" collectionClass="NSMutableArray" id="fh4-WW-cZJ"/>
+                        <outletCollection property="sliders" destination="3NO-F5-Qog" collectionClass="NSMutableArray" id="Z8a-iW-N5Q"/>
+                        <outletCollection property="sliders" destination="eWx-6w-RsJ" collectionClass="NSMutableArray" id="0BZ-25-B3r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="way-8Y-0nF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="2J3-xV-Auu" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="187.76978417266187" y="-614.38848920863313"/>
+        </scene>
+        <!--Br SummaryVC-->
+        <scene sceneID="mxs-ja-Y6M">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Azk-Gm-r64" customClass="Br_Summary_VC" customModule="Katika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fTN-th-IIL">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XT0-Gj-csM">
+                                <rect key="frame" x="8" y="8" width="216" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtM-tU-czb">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="jtM-tU-czb" secondAttribute="height" multiplier="1:1" id="aNC-RR-as5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" image="backButton">
+                                            <color key="titleColor" name="primary"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="popBack" destination="Azk-Gm-r64" eventType="touchUpInside" id="xnR-6s-onA"/>
+                                            <segue destination="B4y-UU-jVq" kind="unwind" unwindAction="comeBackTo_Br_ArtworkType:" id="p59-AP-OUx"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIF-qq-Nk3" customClass="RoundCornerLabel" customModule="Katika" customModuleProvider="target">
+                                        <rect key="frame" x="54" y="0.0" width="162" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Hh0-EN-FFg"/>
+                                    <constraint firstAttribute="width" constant="216" id="kOQ-1D-QXJ"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="In summary:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1zS-BG-gg2">
+                                <rect key="frame" x="266" y="102" width="580" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rsg-0b-O54">
+                                <rect key="frame" x="300" y="178" width="512" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Script"/>
+                                    <segment title="Shots"/>
+                                    <segment title="Graphics"/>
+                                    <segment title="Artworks"/>
+                                    <segment title="Video"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeSlide:" destination="Azk-Gm-r64" eventType="valueChanged" id="KTC-Kg-fnf"/>
+                                </connections>
+                            </segmentedControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5lt-4z-rXu">
+                                <rect key="frame" x="300" y="228" width="512" height="456"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="m1n-Gy-gDI"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="KOd-3V-y6Q"/>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="overView-artworks.png" translatesAutoresizingMaskIntoConstraints="NO" id="HDH-KX-Az3">
+                                <rect key="frame" x="20" y="260" width="117" height="236"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IvU-qK-uXO">
+                                <rect key="frame" x="914" y="353" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                <state key="normal" image="hand_touch">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="pPL-9f-5Jm" kind="show" id="za5-2c-bui"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VAT-T2-mzm"/>
+                        <color key="backgroundColor" name="main_bg"/>
+                        <constraints>
+                            <constraint firstItem="XT0-Gj-csM" firstAttribute="top" secondItem="VAT-T2-mzm" secondAttribute="top" constant="8" id="Lc8-VU-UfH"/>
+                            <constraint firstItem="XT0-Gj-csM" firstAttribute="leading" secondItem="VAT-T2-mzm" secondAttribute="leading" constant="8" id="gl0-BG-JBt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JVv-jD-X2x"/>
+                    <connections>
+                        <outlet property="containerView" destination="5lt-4z-rXu" id="lFI-ak-7w5"/>
+                        <outlet property="continueButton" destination="IvU-qK-uXO" id="hPP-WK-cT3"/>
+                        <outlet property="mySeg" destination="rsg-0b-O54" id="bCW-T0-8gS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZEW-qi-35R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="B4y-UU-jVq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1642" y="-614"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7Ah-tj-zbz">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="pPL-9f-5Jm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b22-Jj-1xt">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PL7-4q-GEQ">
+                                <rect key="frame" x="8" y="8" width="216" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhE-F1-Q3B">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HhE-F1-Q3B" secondAttribute="height" multiplier="1:1" id="nF2-0F-V7P"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" image="backButton">
+                                            <color key="titleColor" name="primary"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="17T-nh-KsM" kind="unwind" unwindAction="comeBackTo_Br_Summary:" id="TlV-Jr-qJs"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8A-wu-9D9" customClass="RoundCornerLabel" customModule="Katika" customModuleProvider="target">
+                                        <rect key="frame" x="54" y="0.0" width="162" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Cux-Xd-6mg"/>
+                                    <constraint firstAttribute="width" constant="216" id="zMc-jF-QGs"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="This is the end of the training module." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tXJ-Y4-GkX">
+                                <rect key="frame" x="226" y="385" width="660" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWM-XP-995" customClass="RoundCornerButton" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="428" y="499" width="256" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Finish and go back to home view">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="popBack" destination="zt2-hU-bzK" eventType="touchUpInside" id="kBt-4F-VfK"/>
+                                    <segue destination="17T-nh-KsM" kind="unwind" unwindAction="comeBackToWelcome:" id="qRR-3H-PY4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bMs-Iy-d6g"/>
+                        <color key="backgroundColor" name="main_bg"/>
+                        <constraints>
+                            <constraint firstItem="PL7-4q-GEQ" firstAttribute="top" secondItem="bMs-Iy-d6g" secondAttribute="top" constant="8" id="aR9-jx-2y3"/>
+                            <constraint firstItem="PL7-4q-GEQ" firstAttribute="leading" secondItem="bMs-Iy-d6g" secondAttribute="leading" constant="8" id="yuV-Ka-mQi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UuS-g3-ngk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2mw-z3-kS6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="17T-nh-KsM" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2316" y="-614"/>
+        </scene>
+        <!--Break Apart MotionVC-->
+        <scene sceneID="PbJ-9u-0r5">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="0OV-pz-EBY" customClass="BreakApartMotion_VC" customModule="Katika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lLw-ei-h8x">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZUO-Os-otd">
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            </containerView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="temp_break_apart.png" translatesAutoresizingMaskIntoConstraints="NO" id="dyb-dU-Sc4">
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q0Q-lj-GUh">
+                                <rect key="frame" x="8" y="8" width="216" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8US-xb-BN5">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8US-xb-BN5" secondAttribute="height" multiplier="1:1" id="vVb-nE-VkW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" image="backButton">
+                                            <color key="titleColor" name="primary"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="popBack" destination="0OV-pz-EBY" eventType="touchUpInside" id="uB9-yg-Up1"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aX-yw-RW0" customClass="RoundCornerLabel" customModule="Katika" customModuleProvider="target">
+                                        <rect key="frame" x="54" y="0.0" width="162" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="E6d-mO-Zaz"/>
+                                    <constraint firstAttribute="height" constant="44" id="d44-Ll-i4H"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oFh-rq-V16">
+                                <rect key="frame" x="953" y="369" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hand_touch"/>
+                                <connections>
+                                    <action selector="watchTheVideo" destination="0OV-pz-EBY" eventType="touchUpInside" id="BA5-lF-JqJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dzh-bm-5g5">
+                                <rect key="frame" x="953" y="369" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hand_touch"/>
+                                <connections>
+                                    <action selector="play_part_7_transition:" destination="0OV-pz-EBY" eventType="touchUpInside" id="5CY-hN-saZ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yLv-ZQ-iKi">
+                                <rect key="frame" x="219" y="332" width="674" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Once shots have their artworks, we will ">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="44" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="animate">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="44" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" some of them to make the motion of the video.">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="44" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0jD-ej-IlL">
+                                <rect key="frame" x="953" y="369" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hand_touch"/>
+                                <connections>
+                                    <segue destination="Azk-Gm-r64" kind="show" id="fD8-Hb-3Lh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="abA-DX-TJ0"/>
+                        <color key="backgroundColor" name="main_bg"/>
+                        <constraints>
+                            <constraint firstItem="Q0Q-lj-GUh" firstAttribute="leading" secondItem="abA-DX-TJ0" secondAttribute="leading" constant="8" id="8dp-Ls-YxY"/>
+                            <constraint firstItem="Q0Q-lj-GUh" firstAttribute="top" secondItem="abA-DX-TJ0" secondAttribute="top" constant="8" id="RGR-8C-NZU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wL6-eV-w2c"/>
+                    <connections>
+                        <outlet property="finished_button" destination="0jD-ej-IlL" id="heN-dN-9wI"/>
+                        <outlet property="nav_button" destination="8US-xb-BN5" id="7A5-bw-Thx"/>
+                        <outlet property="nav_label" destination="9aX-yw-RW0" id="J82-wU-99B"/>
+                        <outlet property="transition_button" destination="Dzh-bm-5g5" id="rH1-eP-kHY"/>
+                        <outlet property="videoConinaterView" destination="ZUO-Os-otd" id="mqS-tE-AJb"/>
+                        <outlet property="watch_the_motion_video_button" destination="oFh-rq-V16" id="MQS-qD-SwG"/>
+                        <outlet property="what_is_motion_intro_text" destination="yLv-ZQ-iKi" id="JsS-qC-ezv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yc6-9z-Ew1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913.48920863309354" y="-614.38848920863313"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="9aX-yw-RW0">
+            <size key="intrinsicContentSize" width="56" height="21.5"/>
+        </designable>
+        <designable name="ATJ-Dh-OMi">
+            <size key="intrinsicContentSize" width="95.5" height="21.5"/>
+        </designable>
+        <designable name="FTW-cg-3xL">
+            <size key="intrinsicContentSize" width="111" height="30"/>
+        </designable>
+        <designable name="M8A-wu-9D9">
+            <size key="intrinsicContentSize" width="31" height="21.5"/>
+        </designable>
+        <designable name="O7O-8M-gz1">
+            <size key="intrinsicContentSize" width="72" height="21.5"/>
+        </designable>
+        <designable name="dIF-qq-Nk3">
+            <size key="intrinsicContentSize" width="76.5" height="21.5"/>
+        </designable>
+        <designable name="dhA-y3-4qd">
+            <size key="intrinsicContentSize" width="176" height="34"/>
+        </designable>
+        <designable name="iWM-XP-995">
+            <size key="intrinsicContentSize" width="224" height="30"/>
+        </designable>
+        <designable name="uLF-vG-Brz">
+            <size key="intrinsicContentSize" width="164" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="backButton" width="256" height="256"/>
+        <image name="break_this_shot_apart" width="256" height="256"/>
+        <image name="hand_touch" width="256" height="256"/>
+        <image name="overView-artworks.png" width="117" height="316"/>
+        <image name="temp_break_apart.png" width="561" height="419"/>
+        <namedColor name="main_bg">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.39215686274509803" green="0.49019607843137253" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

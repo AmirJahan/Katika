@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<g>
+		
+			<polygon fill="#8CAEDC" stroke="#4766B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			42.296,3.831 10.121,3.831 10.121,60.169 56.073,60.169 56.073,17.608 		"/>
+		
+			<polygon fill="#5981C1" stroke="#4766B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			42.296,17.608 56.073,17.608 42.296,3.831 		"/>
+	</g>
+	<g>
+		
+			<rect x="24.93" y="24.167" fill="#5981C1" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="16.333" height="8.333"/>
+		<g>
+			
+				<rect x="35.138" y="45.25" fill="#5981C1" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="16.333" height="8.333"/>
+			
+				<rect x="14.722" y="45.25" fill="#5981C1" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="16.333" height="8.333"/>
+		</g>
+		
+			<polyline fill="none" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			33.097,32.5 33.097,38.875 22.889,38.875 22.889,45.25 		"/>
+		
+			<polyline fill="none" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			33.097,38.875 43.304,38.875 43.304,45.25 		"/>
+	</g>
+	
+		<line fill="#5981C1" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.051" y1="9.833" x2="27.993" y2="9.833"/>
+	
+		<line fill="#5981C1" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.051" y1="14.333" x2="33.809" y2="14.333"/>
+</g>
+</svg>

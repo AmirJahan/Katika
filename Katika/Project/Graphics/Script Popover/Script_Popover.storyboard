@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Script PopoverVC-->
+        <scene sceneID="Pvl-T3-YiB">
+            <objects>
+                <viewController storyboardIdentifier="scriptPopoverId" id="f6g-4z-3dj" customClass="ScriptPopover_VC" customModule="Katika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IhQ-cB-F8D">
+                        <rect key="frame" x="0.0" y="0.0" width="256" height="256"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3f-L1-fdr">
+                                <rect key="frame" x="8" y="32" width="240" height="216"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shot Script" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Al2-Im-zEa">
+                                <rect key="frame" x="8" y="8" width="240" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="v7K-VG-Zj0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Al2-Im-zEa" firstAttribute="top" secondItem="IhQ-cB-F8D" secondAttribute="top" constant="8" id="1bJ-GF-tCv"/>
+                            <constraint firstItem="dpT-a2-Ydt" firstAttribute="trailing" secondItem="o3f-L1-fdr" secondAttribute="trailing" constant="8" id="6MV-zh-5fu"/>
+                            <constraint firstItem="dpT-a2-Ydt" firstAttribute="bottom" secondItem="o3f-L1-fdr" secondAttribute="bottom" constant="8" id="6fZ-en-bLt"/>
+                            <constraint firstItem="o3f-L1-fdr" firstAttribute="top" secondItem="Al2-Im-zEa" secondAttribute="bottom" id="TSC-k5-CPb"/>
+                            <constraint firstItem="Al2-Im-zEa" firstAttribute="leading" secondItem="dpT-a2-Ydt" secondAttribute="leading" constant="8" id="WDD-EO-D8w"/>
+                            <constraint firstItem="dpT-a2-Ydt" firstAttribute="trailing" secondItem="Al2-Im-zEa" secondAttribute="trailing" constant="8" id="hQZ-JH-WfC"/>
+                            <constraint firstItem="o3f-L1-fdr" firstAttribute="leading" secondItem="dpT-a2-Ydt" secondAttribute="leading" constant="8" id="xhU-6r-1b2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dpT-a2-Ydt"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="256" height="256"/>
+                    <connections>
+                        <outlet property="scriptTextView" destination="o3f-L1-fdr" id="8vJ-zl-jft"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Rs-Df-rCV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1605.7971014492755" y="439.28571428571428"/>
+        </scene>
+    </scenes>
+</document>

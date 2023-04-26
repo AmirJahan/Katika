@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Popover Color Picker-->
+        <scene sceneID="FIZ-0C-DHK">
+            <objects>
+                <viewController storyboardIdentifier="rootVc" id="Q5A-CZ-huC" customClass="PopoverColorPicker" customModule="Katika" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jXl-Dm-Rt0"/>
+                        <viewControllerLayoutGuide type="bottom" id="BKd-xg-71m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vzs-0p-Crb">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31D-b5-NkO" customClass="ColorPicker" customModule="Colorful">
+                                <rect key="frame" x="0.0" y="-44" width="300" height="344"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zJU-SZ-chh" firstAttribute="top" secondItem="31D-b5-NkO" secondAttribute="top" constant="44" id="TGi-Mx-fG5"/>
+                            <constraint firstItem="31D-b5-NkO" firstAttribute="leading" secondItem="zJU-SZ-chh" secondAttribute="leading" id="TzP-sc-vZd"/>
+                            <constraint firstItem="zJU-SZ-chh" firstAttribute="trailing" secondItem="31D-b5-NkO" secondAttribute="trailing" id="Wgd-mU-QH2"/>
+                            <constraint firstItem="zJU-SZ-chh" firstAttribute="bottom" secondItem="31D-b5-NkO" secondAttribute="bottom" id="XJ4-ep-d2y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zJU-SZ-chh"/>
+                    </view>
+                    <size key="freeformSize" width="300" height="300"/>
+                    <connections>
+                        <outlet property="colorPicker" destination="31D-b5-NkO" id="DwX-zw-Txx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ycy-PE-vWW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="133"/>
+        </scene>
+    </scenes>
+</document>

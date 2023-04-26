@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Export CommentsVC-->
+        <scene sceneID="CrR-Sf-b1N">
+            <objects>
+                <viewController storyboardIdentifier="commentsVcId" id="uzZ-Q4-LmR" customClass="ExportComments_VC" customModule="Katika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M9P-Sg-7Tc">
+                        <rect key="frame" x="0.0" y="0.0" width="384" height="512"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DxF-hr-zVK">
+                                <rect key="frame" x="10" y="44" width="364" height="287"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentsCellId" id="HRU-1F-qCC" customClass="ExportCommentsTableViewCell" customModule="Katika" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="364" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HRU-1F-qCC" id="6Pm-PK-J5n">
+                                            <rect key="frame" x="0.0" y="0.0" width="364" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2q-ML-EXM">
+                                                    <rect key="frame" x="10" y="10" width="101" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KJF-ud-GYG">
+                                                    <rect key="frame" x="10" y="40" width="344" height="77"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xR-3p-3mA">
+                                                    <rect key="frame" x="119" y="10" width="171" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bJ-P3-Weh">
+                                                    <rect key="frame" x="306" y="10" width="48" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="authorLabel" destination="S2q-ML-EXM" id="Asn-VL-np1"/>
+                                            <outlet property="commentDate" destination="7xR-3p-3mA" id="7E6-1f-lSK"/>
+                                            <outlet property="commentTextView" destination="KJF-ud-GYG" id="nH0-zd-pEf"/>
+                                            <outlet property="commentTime" destination="4bJ-P3-Weh" id="g1m-EX-vxE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOL-xx-bbT">
+                                <rect key="frame" x="10" y="10" width="364" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="5vb-kR-kkZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o92-CT-HVf" customClass="RoundCornerButton" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="10" y="458" width="364" height="44"/>
+                                <color key="backgroundColor" name="primary"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="T4g-fM-1jW"/>
+                                </constraints>
+                                <state key="normal" title="Send New Comment">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addNewComment:" destination="uzZ-Q4-LmR" eventType="touchUpInside" id="q59-Mn-xQv"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add your comment." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sV1-BF-URP">
+                                <rect key="frame" x="10" y="352" width="364" height="96"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="Qj8-gn-PRQ"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZlN-0f-PG5">
+                                <rect key="frame" x="10" y="341" width="364" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="dyq-Je-yIt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Ha-fA-Ikh" firstAttribute="bottom" secondItem="o92-CT-HVf" secondAttribute="bottom" constant="10" id="1Ct-Fq-DHJ"/>
+                            <constraint firstItem="ZOL-xx-bbT" firstAttribute="top" secondItem="6Ha-fA-Ikh" secondAttribute="top" constant="10" id="3SA-Ha-AIy"/>
+                            <constraint firstItem="o92-CT-HVf" firstAttribute="top" secondItem="sV1-BF-URP" secondAttribute="bottom" constant="10" id="4FG-uG-uYm"/>
+                            <constraint firstItem="6Ha-fA-Ikh" firstAttribute="trailing" secondItem="ZlN-0f-PG5" secondAttribute="trailing" constant="10" id="Ew9-Zr-V4I"/>
+                            <constraint firstItem="ZOL-xx-bbT" firstAttribute="leading" secondItem="6Ha-fA-Ikh" secondAttribute="leading" constant="10" id="YAp-jm-ZAT"/>
+                            <constraint firstItem="6Ha-fA-Ikh" firstAttribute="trailing" secondItem="ZOL-xx-bbT" secondAttribute="trailing" constant="10" id="ZXo-8R-Qf6"/>
+                            <constraint firstItem="6Ha-fA-Ikh" firstAttribute="trailing" secondItem="o92-CT-HVf" secondAttribute="trailing" constant="10" id="aOL-Wb-8OL"/>
+                            <constraint firstItem="sV1-BF-URP" firstAttribute="top" secondItem="ZlN-0f-PG5" secondAttribute="bottom" constant="10" id="av7-iu-pmJ"/>
+                            <constraint firstItem="DxF-hr-zVK" firstAttribute="leading" secondItem="6Ha-fA-Ikh" secondAttribute="leading" constant="10" id="bQe-bT-P2H"/>
+                            <constraint firstItem="ZlN-0f-PG5" firstAttribute="leading" secondItem="6Ha-fA-Ikh" secondAttribute="leading" constant="10" id="dPh-fw-1RK"/>
+                            <constraint firstItem="DxF-hr-zVK" firstAttribute="top" secondItem="ZOL-xx-bbT" secondAttribute="bottom" constant="10" id="l5J-tY-d34"/>
+                            <constraint firstItem="ZlN-0f-PG5" firstAttribute="top" secondItem="DxF-hr-zVK" secondAttribute="bottom" constant="10" id="mhd-j7-cZQ"/>
+                            <constraint firstItem="6Ha-fA-Ikh" firstAttribute="trailing" secondItem="sV1-BF-URP" secondAttribute="trailing" constant="10" id="sQR-2C-HgA"/>
+                            <constraint firstItem="6Ha-fA-Ikh" firstAttribute="trailing" secondItem="DxF-hr-zVK" secondAttribute="trailing" constant="10" id="vbO-GJ-hCI"/>
+                            <constraint firstItem="sV1-BF-URP" firstAttribute="leading" secondItem="6Ha-fA-Ikh" secondAttribute="leading" constant="10" id="xV3-vq-skA"/>
+                            <constraint firstItem="o92-CT-HVf" firstAttribute="leading" secondItem="6Ha-fA-Ikh" secondAttribute="leading" constant="10" id="yE4-mZ-5Rz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Ha-fA-Ikh"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="384" height="512"/>
+                    <connections>
+                        <outlet property="commentsTableView" destination="DxF-hr-zVK" id="Qcv-lu-L8s"/>
+                        <outlet property="newCommentsTextView" destination="sV1-BF-URP" id="rkN-2q-ZFT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uuy-dA-KFM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.54676258992806" y="119.78417266187051"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="primary">
+            <color red="0.39215686274509803" green="0.49019607843137253" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

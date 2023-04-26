@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B18698C082CDDD1407907439B755CA7 /* PocketSVG-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE7EFC2D14067425FE1EB23C9F78908 /* PocketSVG-dummy.m */; };
+		113CE9DF654D708E3B154F448B8CB5FF /* ColorMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1165BC6E2B1156E801B561497FA459A /* ColorMapView.swift */; };
+		129AD3704930C28226E00E01EBEE48F4 /* ColorMapCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6CF388CABF069253C6FAD4E113318 /* ColorMapCursor.swift */; };
+		26D3048DBDE0FEDDC11CAE5E2094CDF4 /* SVGBezierPath.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB667F683CF0A891220B034AAF8C0E7B /* SVGBezierPath.mm */; };
+		2AC071BEA605F0F2C1DC44773011C713 /* Pods-Katika-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B22622C2F72CE6A846D6470231D00342 /* Pods-Katika-dummy.m */; };
+		3F225A0FB8BE6BDD0FB43EFB2E4B6AA2 /* SVGLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 39C00335ECF7AE9EE7510C6C236ABCC6 /* SVGLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		502FE610087F3B7444A99B27B315505F /* PocketSVG.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C72C105114BBCCA6FB8F43236D2DEB /* PocketSVG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50834A78578E96C1F3B93985ED7F99B1 /* Colorful-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C06011869A8AC47AA8A46D77E234FCB5 /* Colorful-dummy.m */; };
+		52E017CAF4B235F2B2A1A5161FB2515F /* SVGEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 57A3659B9CDA963D8B5868E47D45CD7C /* SVGEngine.mm */; };
+		580ECCD13FC5DB43D3D72A8DBBEA91A7 /* SVGImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 144BE02BA2CBD2F6C9457ED7FC2D0C03 /* SVGImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69FA23FA121BC3528F4235E2D787939C /* Colorful-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3275B0B7D777F5D89FC29E4E69A4DF1C /* Colorful-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		737D6A2CB54E3B73DA34557B925C853E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		8416BD4D6BDCDE2C6D9A8005161FF86C /* SVGImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9961112DCEE0DFEED0F282E02C688 /* SVGImageView.m */; };
+		9E3C4BB551A227FA5DFBF59315DFFD81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		9F1AC30B57E23B5ED9C0912CFCD817A5 /* SVGEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B8441ECDCB5C76F8A6435167475AF10 /* SVGEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1D02EE94F27D1D427E2A0668B0581BA /* SVGColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2051CC13BCBE6D0D702127FD673E30A /* SVGColors.plist */; };
+		A662FC332AEB300FCD5098A37A0939BE /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1086A4B870BA3097FF143180F76383 /* ColorPicker.swift */; };
+		AEC3B34A8ACBDD78BB57A64F06AC354F /* BrightnessCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB686DE25BD768F4254F9067E59DDFC /* BrightnessCursor.swift */; };
+		B6705C8E3EE30CC051A382566DFFA69F /* SVGPortability.h in Headers */ = {isa = PBXBuildFile; fileRef = FBCE738F48E99FC56A912D0A75B3DC58 /* SVGPortability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8528EDD9A260DA5755F2833859133F8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */; };
+		CF61A33CBC1172376339B4090CDE99F5 /* SVGLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDB47AE4EAFA1B459A36A9B22A9304 /* SVGLayer.m */; };
+		D804DDA9D6D0242F43F10043B5652A75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		DC393A8D7332523400D0F0B023174923 /* Pods-Katika-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B3B6447135A891F2EFDCC7CB85A4E86 /* Pods-Katika-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF03C6CFA598B0401917E8AFB3C564D7 /* ColorfulEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE4CE4EF4A6C81296797E58E10C085 /* ColorfulEntity.swift */; };
+		DF3D7E16E983CC1FC0A2BC8D7E020531 /* BrightnessSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB747C60BB484F2280E685FA91B1F8 /* BrightnessSlider.swift */; };
+		E38FF87676A7C18154E2AF73816CFF79 /* SVGBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 1379FAE30537DC8E1E6C8C44A6C218D1 /* SVGBezierPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB4F8A0248F4B674607006829266BAEF /* PocketSVG-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47CD8DB1CF016DFE7C0E68FC5D9CDA76 /* PocketSVG-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		542DA9AAE2F2EA79E4DC3E826E54D37E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0BB23E38358EC80363667EF7366D412;
+			remoteInfo = Colorful;
+		};
+		AC45A874B02154F6918E3F8252A43A3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A1EC0C5CCFD839C0EEEA91FA1C01CA6;
+			remoteInfo = PocketSVG;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0137B260C8919A8CAC5DD7E1D0FA5FD2 /* Colorful.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Colorful.xcconfig; sourceTree = "<group>"; };
+		078B758BAB86A5CDAE445643C5AE6156 /* Colorful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Colorful.framework; path = Colorful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A1086A4B870BA3097FF143180F76383 /* ColorPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorPicker.swift; path = Colorful/Classes/ColorPicker.swift; sourceTree = "<group>"; };
+		0DD6CF388CABF069253C6FAD4E113318 /* ColorMapCursor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorMapCursor.swift; path = Colorful/Classes/ColorMapCursor.swift; sourceTree = "<group>"; };
+		1379FAE30537DC8E1E6C8C44A6C218D1 /* SVGBezierPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGBezierPath.h; sourceTree = "<group>"; };
+		144BE02BA2CBD2F6C9457ED7FC2D0C03 /* SVGImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGImageView.h; sourceTree = "<group>"; };
+		1B3B6447135A891F2EFDCC7CB85A4E86 /* Pods-Katika-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Katika-umbrella.h"; sourceTree = "<group>"; };
+		1DAE4CE4EF4A6C81296797E58E10C085 /* ColorfulEntity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorfulEntity.swift; path = Colorful/Classes/ColorfulEntity.swift; sourceTree = "<group>"; };
+		2AE7EFC2D14067425FE1EB23C9F78908 /* PocketSVG-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PocketSVG-dummy.m"; sourceTree = "<group>"; };
+		2D3DAE5592D55187F6EC2F109689ADE7 /* Colorful-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Colorful-prefix.pch"; sourceTree = "<group>"; };
+		3275B0B7D777F5D89FC29E4E69A4DF1C /* Colorful-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Colorful-umbrella.h"; sourceTree = "<group>"; };
+		39C00335ECF7AE9EE7510C6C236ABCC6 /* SVGLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGLayer.h; sourceTree = "<group>"; };
+		4444D69F3BE055A1722949491E1F36C1 /* Pods-Katika.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Katika.release.xcconfig"; sourceTree = "<group>"; };
+		46F5D5160033CFB38035E27423EF2469 /* Pods_Katika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Katika.framework; path = "Pods-Katika.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47CD8DB1CF016DFE7C0E68FC5D9CDA76 /* PocketSVG-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PocketSVG-umbrella.h"; sourceTree = "<group>"; };
+		57A3659B9CDA963D8B5868E47D45CD7C /* SVGEngine.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = SVGEngine.mm; sourceTree = "<group>"; };
+		628158A3ED478D343B578B9DCDDA9040 /* PocketSVG.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PocketSVG.xcconfig; sourceTree = "<group>"; };
+		6C7B702A89B4C5A72EF312FA8155CE85 /* Colorful-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Colorful-Info.plist"; sourceTree = "<group>"; };
+		7B8441ECDCB5C76F8A6435167475AF10 /* SVGEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGEngine.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ED9961112DCEE0DFEED0F282E02C688 /* SVGImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SVGImageView.m; sourceTree = "<group>"; };
+		9F28CD37C3110DA06507DA88B5ACB6BF /* Pods-Katika-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Katika-acknowledgements.plist"; sourceTree = "<group>"; };
+		A24FFAAD7B0BBBBC7CABFF389D83A5C7 /* Pods-Katika-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Katika-frameworks.sh"; sourceTree = "<group>"; };
+		AB667F683CF0A891220B034AAF8C0E7B /* SVGBezierPath.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = SVGBezierPath.mm; sourceTree = "<group>"; };
+		ADFDB47AE4EAFA1B459A36A9B22A9304 /* SVGLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SVGLayer.m; sourceTree = "<group>"; };
+		AE8E3E8BD447C1F9F7544E090CFFD20F /* PocketSVG.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PocketSVG.modulemap; sourceTree = "<group>"; };
+		AFB686DE25BD768F4254F9067E59DDFC /* BrightnessCursor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BrightnessCursor.swift; path = Colorful/Classes/BrightnessCursor.swift; sourceTree = "<group>"; };
+		B1B527DDC0D85E0F53AC2CDDE25BD65C /* Pods-Katika.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Katika.modulemap"; sourceTree = "<group>"; };
+		B22622C2F72CE6A846D6470231D00342 /* Pods-Katika-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Katika-dummy.m"; sourceTree = "<group>"; };
+		C06011869A8AC47AA8A46D77E234FCB5 /* Colorful-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Colorful-dummy.m"; sourceTree = "<group>"; };
+		C2051CC13BCBE6D0D702127FD673E30A /* SVGColors.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = SVGColors.plist; sourceTree = "<group>"; };
+		C2CCD99556211C14BB15FC9D4043AF12 /* PocketSVG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PocketSVG.framework; path = PocketSVG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45B787197F4D3B45DCBEBBE7DE205DA /* PocketSVG-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PocketSVG-prefix.pch"; sourceTree = "<group>"; };
+		CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		CDB42BE01A1D61BDAB87F878785E1525 /* Pods-Katika.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Katika.debug.xcconfig"; sourceTree = "<group>"; };
+		D3724A389357C41B08B2BBDB2D1018FC /* Pods-Katika-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Katika-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E1165BC6E2B1156E801B561497FA459A /* ColorMapView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorMapView.swift; path = Colorful/Classes/ColorMapView.swift; sourceTree = "<group>"; };
+		E2B24CFCAF73C7497BD3CEA02ACEE6F4 /* Colorful.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Colorful.modulemap; sourceTree = "<group>"; };
+		E3DF7C54D587D987645AA339A0993B71 /* Pods-Katika-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Katika-Info.plist"; sourceTree = "<group>"; };
+		EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F2F134C889B96046FA29AB713990DAC5 /* PocketSVG-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PocketSVG-Info.plist"; sourceTree = "<group>"; };
+		F5C72C105114BBCCA6FB8F43236D2DEB /* PocketSVG.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PocketSVG.h; sourceTree = "<group>"; };
+		F8DB747C60BB484F2280E685FA91B1F8 /* BrightnessSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BrightnessSlider.swift; path = Colorful/Classes/BrightnessSlider.swift; sourceTree = "<group>"; };
+		FBCE738F48E99FC56A912D0A75B3DC58 /* SVGPortability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SVGPortability.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0387336E94A1E234755C470F547CF140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737D6A2CB54E3B73DA34557B925C853E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F0874AA2E010C199828DCAD67AB73C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E3C4BB551A227FA5DFBF59315DFFD81 /* Foundation.framework in Frameworks */,
+				C8528EDD9A260DA5755F2833859133F8 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE18A384B8FAEC904C9BD99F819FB142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D804DDA9D6D0242F43F10043B5652A75 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		048D608799B87B953CE2B0BC9CD9C427 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE8E3E8BD447C1F9F7544E090CFFD20F /* PocketSVG.modulemap */,
+				628158A3ED478D343B578B9DCDDA9040 /* PocketSVG.xcconfig */,
+				2AE7EFC2D14067425FE1EB23C9F78908 /* PocketSVG-dummy.m */,
+				F2F134C889B96046FA29AB713990DAC5 /* PocketSVG-Info.plist */,
+				C45B787197F4D3B45DCBEBBE7DE205DA /* PocketSVG-prefix.pch */,
+				47CD8DB1CF016DFE7C0E68FC5D9CDA76 /* PocketSVG-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PocketSVG";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C850C37433B9EAF70AA8EF4EC21FC43 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1965FA4B3C747D85E0589A59E4CCA547 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				078B758BAB86A5CDAE445643C5AE6156 /* Colorful.framework */,
+				C2CCD99556211C14BB15FC9D4043AF12 /* PocketSVG.framework */,
+				46F5D5160033CFB38035E27423EF2469 /* Pods_Katika.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31F308BC96EBBDB50271DCF376FA6095 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DFD218E8AFEF2471506D2333EB75EE3 /* Pods-Katika */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4DFD218E8AFEF2471506D2333EB75EE3 /* Pods-Katika */ = {
+			isa = PBXGroup;
+			children = (
+				B1B527DDC0D85E0F53AC2CDDE25BD65C /* Pods-Katika.modulemap */,
+				D3724A389357C41B08B2BBDB2D1018FC /* Pods-Katika-acknowledgements.markdown */,
+				9F28CD37C3110DA06507DA88B5ACB6BF /* Pods-Katika-acknowledgements.plist */,
+				B22622C2F72CE6A846D6470231D00342 /* Pods-Katika-dummy.m */,
+				A24FFAAD7B0BBBBC7CABFF389D83A5C7 /* Pods-Katika-frameworks.sh */,
+				E3DF7C54D587D987645AA339A0993B71 /* Pods-Katika-Info.plist */,
+				1B3B6447135A891F2EFDCC7CB85A4E86 /* Pods-Katika-umbrella.h */,
+				CDB42BE01A1D61BDAB87F878785E1525 /* Pods-Katika.debug.xcconfig */,
+				4444D69F3BE055A1722949491E1F36C1 /* Pods-Katika.release.xcconfig */,
+			);
+			name = "Pods-Katika";
+			path = "Target Support Files/Pods-Katika";
+			sourceTree = "<group>";
+		};
+		6C850C37433B9EAF70AA8EF4EC21FC43 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */,
+				CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		703733F2843F9E1A87CC5D200EB491AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86DEB7795104101BB12E7BC02A333A01 /* Colorful */,
+				D60C9838AA9A5AE87348196540072B0D /* PocketSVG */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		86DEB7795104101BB12E7BC02A333A01 /* Colorful */ = {
+			isa = PBXGroup;
+			children = (
+				AFB686DE25BD768F4254F9067E59DDFC /* BrightnessCursor.swift */,
+				F8DB747C60BB484F2280E685FA91B1F8 /* BrightnessSlider.swift */,
+				1DAE4CE4EF4A6C81296797E58E10C085 /* ColorfulEntity.swift */,
+				0DD6CF388CABF069253C6FAD4E113318 /* ColorMapCursor.swift */,
+				E1165BC6E2B1156E801B561497FA459A /* ColorMapView.swift */,
+				0A1086A4B870BA3097FF143180F76383 /* ColorPicker.swift */,
+				A11730753DF845CA517943F5E70D4944 /* Support Files */,
+			);
+			name = Colorful;
+			path = Colorful;
+			sourceTree = "<group>";
+		};
+		A11730753DF845CA517943F5E70D4944 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2B24CFCAF73C7497BD3CEA02ACEE6F4 /* Colorful.modulemap */,
+				0137B260C8919A8CAC5DD7E1D0FA5FD2 /* Colorful.xcconfig */,
+				C06011869A8AC47AA8A46D77E234FCB5 /* Colorful-dummy.m */,
+				6C7B702A89B4C5A72EF312FA8155CE85 /* Colorful-Info.plist */,
+				2D3DAE5592D55187F6EC2F109689ADE7 /* Colorful-prefix.pch */,
+				3275B0B7D777F5D89FC29E4E69A4DF1C /* Colorful-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Colorful";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				703733F2843F9E1A87CC5D200EB491AD /* Pods */,
+				1965FA4B3C747D85E0589A59E4CCA547 /* Products */,
+				31F308BC96EBBDB50271DCF376FA6095 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D60C9838AA9A5AE87348196540072B0D /* PocketSVG */ = {
+			isa = PBXGroup;
+			children = (
+				F5C72C105114BBCCA6FB8F43236D2DEB /* PocketSVG.h */,
+				1379FAE30537DC8E1E6C8C44A6C218D1 /* SVGBezierPath.h */,
+				AB667F683CF0A891220B034AAF8C0E7B /* SVGBezierPath.mm */,
+				7B8441ECDCB5C76F8A6435167475AF10 /* SVGEngine.h */,
+				57A3659B9CDA963D8B5868E47D45CD7C /* SVGEngine.mm */,
+				144BE02BA2CBD2F6C9457ED7FC2D0C03 /* SVGImageView.h */,
+				9ED9961112DCEE0DFEED0F282E02C688 /* SVGImageView.m */,
+				39C00335ECF7AE9EE7510C6C236ABCC6 /* SVGLayer.h */,
+				ADFDB47AE4EAFA1B459A36A9B22A9304 /* SVGLayer.m */,
+				FBCE738F48E99FC56A912D0A75B3DC58 /* SVGPortability.h */,
+				FC7FF8FE5713485F80542FF55B328DCE /* Resources */,
+				048D608799B87B953CE2B0BC9CD9C427 /* Support Files */,
+			);
+			name = PocketSVG;
+			path = PocketSVG;
+			sourceTree = "<group>";
+		};
+		FC7FF8FE5713485F80542FF55B328DCE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C2051CC13BCBE6D0D702127FD673E30A /* SVGColors.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		38EB63418FCF15F95233875A4A8662B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC393A8D7332523400D0F0B023174923 /* Pods-Katika-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		567DD544B190825A19A6BEDA1EB5F39E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69FA23FA121BC3528F4235E2D787939C /* Colorful-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDDC958F8AF34A73BA48CA9D9D48B19E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4F8A0248F4B674607006829266BAEF /* PocketSVG-umbrella.h in Headers */,
+				502FE610087F3B7444A99B27B315505F /* PocketSVG.h in Headers */,
+				E38FF87676A7C18154E2AF73816CFF79 /* SVGBezierPath.h in Headers */,
+				9F1AC30B57E23B5ED9C0912CFCD817A5 /* SVGEngine.h in Headers */,
+				580ECCD13FC5DB43D3D72A8DBBEA91A7 /* SVGImageView.h in Headers */,
+				3F225A0FB8BE6BDD0FB43EFB2E4B6AA2 /* SVGLayer.h in Headers */,
+				B6705C8E3EE30CC051A382566DFFA69F /* SVGPortability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		46240114C108B67190DA84E50B621E1C /* Pods-Katika */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDE49B43CA5CA00BE99256AFD195A4E4 /* Build configuration list for PBXNativeTarget "Pods-Katika" */;
+			buildPhases = (
+				38EB63418FCF15F95233875A4A8662B9 /* Headers */,
+				833A26AD9854A24BD2175ED8B89CF963 /* Sources */,
+				0387336E94A1E234755C470F547CF140 /* Frameworks */,
+				72309F1FBB6E9CE9AC5E178C1E96BA22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A511C0C12CA4506BD5595BAD47D5244 /* PBXTargetDependency */,
+				D06FC4E5A74988754E87DFE67FF72BF8 /* PBXTargetDependency */,
+			);
+			name = "Pods-Katika";
+			productName = "Pods-Katika";
+			productReference = 46F5D5160033CFB38035E27423EF2469 /* Pods_Katika.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6A1EC0C5CCFD839C0EEEA91FA1C01CA6 /* PocketSVG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CF32A344AEC877327B10D79713B1B73 /* Build configuration list for PBXNativeTarget "PocketSVG" */;
+			buildPhases = (
+				BDDC958F8AF34A73BA48CA9D9D48B19E /* Headers */,
+				E2CC8B15AD6871C7F11DEB62A39DDDAC /* Sources */,
+				5F0874AA2E010C199828DCAD67AB73C1 /* Frameworks */,
+				D2C79B8B9704CCBCE2FEA23BB1B10FE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketSVG;
+			productName = PocketSVG;
+			productReference = C2CCD99556211C14BB15FC9D4043AF12 /* PocketSVG.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D0BB23E38358EC80363667EF7366D412 /* Colorful */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3F34DDE224D2942E796BE6C710B0C9E /* Build configuration list for PBXNativeTarget "Colorful" */;
+			buildPhases = (
+				567DD544B190825A19A6BEDA1EB5F39E /* Headers */,
+				335E5E3A20FC74C7739BB7C2AB43E5D2 /* Sources */,
+				BE18A384B8FAEC904C9BD99F819FB142 /* Frameworks */,
+				400E8ABE5FFBDDC43B5089802FEF5574 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Colorful;
+			productName = Colorful;
+			productReference = 078B758BAB86A5CDAE445643C5AE6156 /* Colorful.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1965FA4B3C747D85E0589A59E4CCA547 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0BB23E38358EC80363667EF7366D412 /* Colorful */,
+				6A1EC0C5CCFD839C0EEEA91FA1C01CA6 /* PocketSVG */,
+				46240114C108B67190DA84E50B621E1C /* Pods-Katika */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		400E8ABE5FFBDDC43B5089802FEF5574 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72309F1FBB6E9CE9AC5E178C1E96BA22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C79B8B9704CCBCE2FEA23BB1B10FE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D02EE94F27D1D427E2A0668B0581BA /* SVGColors.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		335E5E3A20FC74C7739BB7C2AB43E5D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC3B34A8ACBDD78BB57A64F06AC354F /* BrightnessCursor.swift in Sources */,
+				DF3D7E16E983CC1FC0A2BC8D7E020531 /* BrightnessSlider.swift in Sources */,
+				50834A78578E96C1F3B93985ED7F99B1 /* Colorful-dummy.m in Sources */,
+				DF03C6CFA598B0401917E8AFB3C564D7 /* ColorfulEntity.swift in Sources */,
+				129AD3704930C28226E00E01EBEE48F4 /* ColorMapCursor.swift in Sources */,
+				113CE9DF654D708E3B154F448B8CB5FF /* ColorMapView.swift in Sources */,
+				A662FC332AEB300FCD5098A37A0939BE /* ColorPicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		833A26AD9854A24BD2175ED8B89CF963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC071BEA605F0F2C1DC44773011C713 /* Pods-Katika-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CC8B15AD6871C7F11DEB62A39DDDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B18698C082CDDD1407907439B755CA7 /* PocketSVG-dummy.m in Sources */,
+				26D3048DBDE0FEDDC11CAE5E2094CDF4 /* SVGBezierPath.mm in Sources */,
+				52E017CAF4B235F2B2A1A5161FB2515F /* SVGEngine.mm in Sources */,
+				8416BD4D6BDCDE2C6D9A8005161FF86C /* SVGImageView.m in Sources */,
+				CF61A33CBC1172376339B4090CDE99F5 /* SVGLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A511C0C12CA4506BD5595BAD47D5244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Colorful;
+			target = D0BB23E38358EC80363667EF7366D412 /* Colorful */;
+			targetProxy = 542DA9AAE2F2EA79E4DC3E826E54D37E /* PBXContainerItemProxy */;
+		};
+		D06FC4E5A74988754E87DFE67FF72BF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PocketSVG;
+			target = 6A1EC0C5CCFD839C0EEEA91FA1C01CA6 /* PocketSVG */;
+			targetProxy = AC45A874B02154F6918E3F8252A43A3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		454C09858F5903276AC3305E9DF20CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 628158A3ED478D343B578B9DCDDA9040 /* PocketSVG.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PocketSVG/PocketSVG-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PocketSVG/PocketSVG-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PocketSVG/PocketSVG.modulemap";
+				PRODUCT_MODULE_NAME = PocketSVG;
+				PRODUCT_NAME = PocketSVG;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		793A207DED960BE7693B62C0F066F935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 628158A3ED478D343B578B9DCDDA9040 /* PocketSVG.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PocketSVG/PocketSVG-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PocketSVG/PocketSVG-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PocketSVG/PocketSVG.modulemap";
+				PRODUCT_MODULE_NAME = PocketSVG;
+				PRODUCT_NAME = PocketSVG;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AF02409F0E6FE7BC7546991064BFF8E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0137B260C8919A8CAC5DD7E1D0FA5FD2 /* Colorful.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Colorful/Colorful-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Colorful/Colorful-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Colorful/Colorful.modulemap";
+				PRODUCT_MODULE_NAME = Colorful;
+				PRODUCT_NAME = Colorful;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3E83CEAE1356E828B204B9521B66645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4444D69F3BE055A1722949491E1F36C1 /* Pods-Katika.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Katika/Pods-Katika-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Katika/Pods-Katika.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F53D7C1554AAC04928FB162295823396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDB42BE01A1D61BDAB87F878785E1525 /* Pods-Katika.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Katika/Pods-Katika-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Katika/Pods-Katika.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F91CAE0B035EE49A3BC45FA3F14BAD03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0137B260C8919A8CAC5DD7E1D0FA5FD2 /* Colorful.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Colorful/Colorful-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Colorful/Colorful-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Colorful/Colorful.modulemap";
+				PRODUCT_MODULE_NAME = Colorful;
+				PRODUCT_NAME = Colorful;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */,
+				7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CF32A344AEC877327B10D79713B1B73 /* Build configuration list for PBXNativeTarget "PocketSVG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454C09858F5903276AC3305E9DF20CB0 /* Debug */,
+				793A207DED960BE7693B62C0F066F935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDE49B43CA5CA00BE99256AFD195A4E4 /* Build configuration list for PBXNativeTarget "Pods-Katika" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53D7C1554AAC04928FB162295823396 /* Debug */,
+				B3E83CEAE1356E828B204B9521B66645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3F34DDE224D2942E796BE6C710B0C9E /* Build configuration list for PBXNativeTarget "Colorful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF02409F0E6FE7BC7546991064BFF8E1 /* Debug */,
+				F91CAE0B035EE49A3BC45FA3F14BAD03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

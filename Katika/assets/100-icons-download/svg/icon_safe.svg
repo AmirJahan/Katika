@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<g>
+		
+			<rect x="11.417" y="47.324" fill="#5981C1" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10" height="8.553"/>
+		
+			<rect x="42.583" y="47.324" fill="#5981C1" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10" height="8.553"/>
+	</g>
+	
+		<path fill="#5981C1" stroke="#4766B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M56.136,51.6H7.864c-2.824,0-5.114-2.289-5.114-5.114v-33.25c0-2.824,2.289-5.114,5.114-5.114h48.273
+		c2.824,0,5.114,2.289,5.114,5.114v33.25C61.25,49.311,58.961,51.6,56.136,51.6z"/>
+	
+		<path fill="#5981C1" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M52.261,45.873H17.739c-2.824,0-5.114-2.289-5.114-5.114V18.964c0-2.824,2.289-5.114,5.114-5.114h34.523
+		c2.824,0,5.114,2.289,5.114,5.114v21.795C57.375,43.584,55.086,45.873,52.261,45.873z"/>
+	<g>
+		<path fill="#8CAEDC" stroke="#4766B0" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M14.36,25.377
+			h-3.47c-1.32,0-2.39-1.07-2.39-2.39v0c0-1.32,1.07-2.39,2.39-2.39h3.47c1.32,0,2.39,1.07,2.39,2.39v0
+			C16.75,24.307,15.68,25.377,14.36,25.377z"/>
+		<path fill="#8CAEDC" stroke="#4766B0" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M14.36,39.127
+			h-3.47c-1.32,0-2.39-1.07-2.39-2.39v0c0-1.32,1.07-2.39,2.39-2.39h3.47c1.32,0,2.39,1.07,2.39,2.39v0
+			C16.75,38.057,15.68,39.127,14.36,39.127z"/>
+	</g>
+	
+		<circle fill="#8CAEDC" stroke="#4766B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="45.667" cy="29.862" r="7.25"/>
+	
+		<line fill="none" stroke="#4766B0" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="45.667" y1="25.938" x2="45.667" y2="27.876"/>
+	
+		<line fill="none" stroke="#4766B0" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="45.667" y1="25.938" x2="45.667" y2="27.876"/>
+</g>
+</svg>

@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tqP-Cl-0a8">
+    <device id="ipad10_5" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="N57-u3-Qn1">
+            <objects>
+                <viewController storyboardIdentifier="rootVc" modalPresentationStyle="fullScreen" id="tqP-Cl-0a8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RKr-WX-DjF">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YV4-uA-TvC">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Wl7-Ax-1Fw" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="eHt-Oo-0A1"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="How to write the script for a video?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gn6-w8-KhS">
+                                <rect key="frame" x="76" y="246" width="832" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary light"/>
+                        <viewLayoutGuide key="safeArea" id="HZD-NS-ivG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ji3-Vo-Ndk"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZqB-bc-J7o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="-971"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="y2D-8m-VU2">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="Wl7-Ax-1Fw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eiH-Ou-N7u">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gP-e4-EJH">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="AlD-lX-dXl" kind="show" id="1pR-0e-QvI"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Script is the story you want to tell through your video." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="laZ-HG-e7B">
+                                <rect key="frame" x="76" y="238" width="832" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary mid light"/>
+                        <viewLayoutGuide key="safeArea" id="BWD-nX-e3U"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yJf-yW-3uf"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ES7-iY-e9n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="-971"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5cN-nP-hPc">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="pIo-UC-Hto" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xwW-K3-Hx9">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6H-ls-fSO">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="4Ml-5D-y20" kind="presentation" id="1kg-dm-vaz"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Script is also used to record the voice over the video." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J0I-2B-aQ1">
+                                <rect key="frame" x="108" y="257" width="832" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary mid light"/>
+                        <viewLayoutGuide key="safeArea" id="iv3-KG-6gi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dta-bf-b2S"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Mq-9E-Zso" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="-250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dAl-zN-qvg">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="oo7-Qu-Crg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KzB-XO-Luy">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlt-vd-bW4">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="KnG-tR-mSv" kind="presentation" id="y5t-Cr-9AT"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Katika will automatically extract keywords from the script." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="I2L-Sd-PFe">
+                                <rect key="frame" x="76" y="225" width="832" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary mid light"/>
+                        <viewLayoutGuide key="safeArea" id="yWf-XV-vCF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nxO-uz-A26"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vJ7-d5-UyU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606" y="-250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lZK-op-M2R">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="o8B-SP-V4p" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DwI-SE-cZ3">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPh-Cx-S8r">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="xPk-sy-hTS" kind="presentation" id="5Ch-bi-BPh"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Keywords will then be used to suggest artworks for your video." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fhH-Bn-TXn">
+                                <rect key="frame" x="76" y="225" width="832" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary mid light"/>
+                        <viewLayoutGuide key="safeArea" id="bAJ-K0-hKw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Oo-ro-9fv"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGp-B3-SAL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-681" y="526"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7j9-Ao-eGf">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="qXA-eh-Xt8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Yv-nr-YYr">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGw-cv-rDE">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="UVZ-eW-7yu" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="Opz-kY-njk"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="For the algorithm to work better, it helps if you use punctuation." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Nnu-L2-N9m">
+                                <rect key="frame" x="76" y="225" width="832" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary mid light"/>
+                        <viewLayoutGuide key="safeArea" id="0pt-Y1-mnT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4qA-U5-pCi"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NDk-cX-uhn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="525" y="526"/>
+        </scene>
+        <!--Tr Script EndVC-->
+        <scene sceneID="bEK-Fd-W2Y">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="UVZ-eW-7yu" customClass="Tr_Script_End_VC" customModule="Katika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lfK-cO-Lv9">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="This is the end of the script writing training. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="B41-wE-HWT">
+                                <rect key="frame" x="76" y="225" width="832" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary light"/>
+                        <viewLayoutGuide key="safeArea" id="0ir-oK-WT7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="76Y-hM-PoY"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y3u-xx-Zgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181" y="526"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9N2-qK-FaS">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="4Ml-5D-y20" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ofX-ja-lif">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gy-ca-GfV">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="oo7-Qu-Crg" kind="show" id="3gg-1h-tVv"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scripIsAudio.png" translatesAutoresizingMaskIntoConstraints="NO" id="qNP-lQ-scg">
+                                <rect key="frame" x="106" y="207" width="773" height="292"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary light"/>
+                        <viewLayoutGuide key="safeArea" id="lbh-A0-OFr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qsk-Wx-CJ4"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1pw-SA-8JC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="-250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="l9l-od-ojk">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="AlD-lX-dXl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OOw-Qw-oc2">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAk-Fa-U5p">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="pIo-UC-Hto" kind="presentation" id="fON-Qr-nam"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="storyIsScript.png" translatesAutoresizingMaskIntoConstraints="NO" id="0VT-td-YGn">
+                                <rect key="frame" x="208" y="202" width="569" height="303"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary light"/>
+                        <viewLayoutGuide key="safeArea" id="Yec-yA-7vz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tco-5E-VYA"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USh-ws-cWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="607" y="-971"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OH4-LS-rgr">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="KnG-tR-mSv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Iy-rA-R8e">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W0-fi-ov4">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="o8B-SP-V4p" kind="presentation" id="XtD-Do-JGj"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tq3-nC-wJ7" customClass="RoundCornerTextView" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="74" y="168" width="836" height="371.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Modern ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="technology">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" allows people to communicate directly. ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Voice">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" and video calls, ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="emails">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=", ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="pictures">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" and instant messages ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="travel">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" directly from A to B maintaining ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="trust">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" between ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="individuals">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" no matter how far ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="apart">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" they are.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="44" name="Noteworthy-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary light"/>
+                        <viewLayoutGuide key="safeArea" id="uLM-VZ-PwD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="twQ-GH-5uY"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1A-nx-AXl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228.5971223021584" y="-250.35971223021585"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Df-Cm-eef">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="xPk-sy-hTS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oev-1K-Ad1">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Der-2X-MD0">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="qXA-eh-Xt8" kind="presentation" id="z10-1j-esa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="voice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iui-0p-eIJ">
+                                <rect key="frame" x="104" y="75" width="70" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="voice_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nkm-fg-nIM" customClass="RoundCornerImageView" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="217" y="75" width="183" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="voice_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="mhl-Uq-jL8" customClass="RoundCornerImageView" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="435" y="75" width="183" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="voice_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="oUk-vf-5AO" customClass="RoundCornerImageView" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="655" y="75" width="183" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="apart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGk-RP-AUM">
+                                <rect key="frame" x="104" y="321" width="72" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apart_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="r3x-Qc-jYv" customClass="RoundCornerImageView" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="216" y="321" width="183" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apart_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mzf-lJ-oQi" customClass="RoundCornerImageView" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="434" y="321" width="183" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apart_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="je3-yG-SWc" customClass="RoundCornerImageView" customModule="Katika" customModuleProvider="target">
+                                <rect key="frame" x="654" y="321" width="183" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary light"/>
+                        <viewLayoutGuide key="safeArea" id="54j-fP-Tq4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="V3y-gW-7qw"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRv-NP-7bN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-74.460431654676256" y="525.89928057553959"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apart_1.png" width="256" height="256"/>
+        <image name="apart_2.png" width="256" height="256"/>
+        <image name="apart_3.png" width="256" height="256"/>
+        <image name="nextButtonWhite" width="256" height="256"/>
+        <image name="scripIsAudio.png" width="798" height="259"/>
+        <image name="storyIsScript.png" width="523" height="244"/>
+        <image name="voice_1.png" width="256" height="256"/>
+        <image name="voice_2.png" width="256" height="256"/>
+        <image name="voice_3.png" width="256" height="256"/>
+        <namedColor name="primary">
+            <color red="0.39215686274509803" green="0.49019607843137253" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary light">
+            <color red="0.58823529411764708" green="0.68627450980392157" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary mid light">
+            <color red="0.49019607843137253" green="0.58823529411764708" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

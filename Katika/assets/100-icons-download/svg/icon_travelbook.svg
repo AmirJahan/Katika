@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			
+				<path fill="#5981C1" stroke="#4766B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M4.4,42.438V12.832v0c0-3.276,2.68-5.957,5.957-5.957h35.505v29.606"/>
+			
+				<line fill="#5981C1" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.356" y1="36.482" x2="10.356" y2="6.876"/>
+			
+				<path fill="#8CAEDC" stroke="#4766B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M10.356,36.482c-3.276,0-5.957,2.68-5.957,5.957v0c0,3.276,2.68,5.957,5.957,5.957h35.505V36.482H10.356z"/>
+			
+				<line fill="#5981C1" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.356" y1="40.745" x2="41.189" y2="40.745"/>
+			
+				<line fill="#5981C1" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.356" y1="44.599" x2="41.189" y2="44.599"/>
+			
+				<polygon fill="#8CAEDC" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				40.254,15.751 34.472,13.765 28.691,15.751 28.691,6.876 40.254,6.876 			"/>
+		</g>
+	</g>
+	<g>
+		
+			<circle fill="#8CAEDC" stroke="#4766B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="45.861" cy="43.385" r="13.739"/>
+		
+			<line fill="none" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="32.122" y1="43.385" x2="59.6" y2="43.385"/>
+		
+			<line fill="none" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="34.092" y1="36.516" x2="57.63" y2="36.516"/>
+		
+			<line fill="none" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="34.092" y1="50.255" x2="57.63" y2="50.255"/>
+		
+			<ellipse fill="none" stroke="#4766B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="45.861" cy="43.385" rx="5.304" ry="13.739"/>
+	</g>
+</g>
+</svg>

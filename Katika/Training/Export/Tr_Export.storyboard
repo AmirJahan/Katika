@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wEu-Xf-TUr">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="JeF-fY-ygl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vb4-gu-Icj">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="In here, we can preview the entire video at once." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="r12-00-qq1">
+                                <rect key="frame" x="140" y="270" width="768" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgV-TA-Ddh">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="21f-XR-9T8" kind="presentation" modalTransitionStyle="coverVertical" id="Zzf-3E-jdP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="primary mid light"/>
+                        <viewLayoutGuide key="safeArea" id="mkz-wS-hW2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ES2-EN-epu"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIR-aJ-Uc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="512" y="1218"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7Ug-Rm-BWn">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="21f-XR-9T8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JVe-sN-vLR">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztc-Ey-YMQ">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="rx0-vl-2rc" kind="presentation" modalTransitionStyle="coverVertical" id="TyO-hg-Lfk"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="And finally export it out to our gallery." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GJO-8h-bux">
+                                <rect key="frame" x="140" y="270" width="768" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary light"/>
+                        <viewLayoutGuide key="safeArea" id="Tde-xS-So0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fCP-gP-8sW"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gca-rh-tHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1223" y="1871"/>
+        </scene>
+        <!--Tr Collaboration EndVC-->
+        <scene sceneID="SjZ-wY-e89">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="rx0-vl-2rc" customClass="Tr_Collaboration_End_VC" customModule="Katika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D5b-cw-4VP">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="This is the end of the export training. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="td0-5r-88K">
+                                <rect key="frame" x="140" y="270" width="768" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary mid light"/>
+                        <viewLayoutGuide key="safeArea" id="V3C-In-xip"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kp6-o0-uf1"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iju-gC-oXa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511.59420289855075" y="1870.9821428571427"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5Af-0o-anF">
+            <objects>
+                <viewController storyboardIdentifier="rootVc" modalPresentationStyle="currentContext" id="s0V-6N-KiP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vvn-UL-t84">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="706"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5H-nT-Ng5">
+                                <rect key="frame" x="444" y="560" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Continue" image="nextButtonWhite">
+                                    <color key="titleColor" name="primary"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="JeF-fY-ygl" kind="presentation" modalTransitionStyle="coverVertical" id="MpE-jM-xKI"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="How to export a project as a video?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0V7-kl-TiY">
+                                <rect key="frame" x="140" y="270" width="768" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="64"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary light"/>
+                        <viewLayoutGuide key="safeArea" id="k3E-Um-SPq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="coF-Xh-xHF"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="984" height="706"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U6U-4s-42U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1242" y="1217"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nextButtonWhite" width="256" height="256"/>
+        <namedColor name="primary">
+            <color red="0.39215686274509803" green="0.49019607843137253" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary light">
+            <color red="0.58823529411764708" green="0.68627450980392157" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary mid light">
+            <color red="0.49019607843137253" green="0.58823529411764708" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
