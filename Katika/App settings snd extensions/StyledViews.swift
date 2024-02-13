@@ -1,9 +1,8 @@
 import UIKit
 
-
 @IBDesignable
-final class RoundCornerTextView : UITextView
-{
+final class RoundCornerTextView: UITextView {
+
     @IBInspectable
     var cornerRadius: CGFloat {
         set {
@@ -16,8 +15,8 @@ final class RoundCornerTextView : UITextView
 }
 
 @IBDesignable
-final class RoundCornerImageView : UIImageView
-{
+final class RoundCornerImageView: UIImageView {
+
     @IBInspectable
     var cornerRadius: CGFloat {
         set {
@@ -29,11 +28,9 @@ final class RoundCornerImageView : UIImageView
     }
 }
 
-
-
 @IBDesignable
-final class RoundCornerLabel : UILabel
-{
+final class RoundCornerLabel: UILabel {
+
     @IBInspectable
     var cornerRadius: CGFloat {
         set {
@@ -45,11 +42,9 @@ final class RoundCornerLabel : UILabel
     }
 }
 
-
-
 @IBDesignable
-final class RoundCornerButton : UIButton
-{
+final class RoundCornerButton: UIButton {
+
     //override func prepareForInterfaceBuilder()
     // {
     //        self.layer.borderWidth = 2.0
@@ -57,7 +52,7 @@ final class RoundCornerButton : UIButton
     //  self.layer.cornerRadius = 32.0
     //  self.clipsToBounds = true
     // }
-    
+
     @IBInspectable
     var cornerRadius: CGFloat {
         set {
@@ -69,11 +64,9 @@ final class RoundCornerButton : UIButton
     }
 }
 
+@IBDesignable class BorderedImageView: UIImageView {
 
-@IBDesignable class BorderedImageView : UIImageView
-{
-    override func prepareForInterfaceBuilder()
-    {
+    override func prepareForInterfaceBuilder() {
         self.layer.borderWidth = 1.0
         self.layer.borderColor = UIColor.black.cgColor
         self.layer.cornerRadius = 6.0
@@ -81,10 +74,9 @@ final class RoundCornerButton : UIButton
     }
 }
 
-@IBDesignable class BorderedButton : UIButton
-{
-    override func prepareForInterfaceBuilder()
-    {
+@IBDesignable class BorderedButton: UIButton {
+
+    override func prepareForInterfaceBuilder() {
         self.layer.borderWidth = 1.0
         self.layer.borderColor = UIColor.lightGray.cgColor
         self.layer.cornerRadius = 6.0
@@ -92,10 +84,9 @@ final class RoundCornerButton : UIButton
     }
 }
 
-@IBDesignable class BorderedLabel : UILabel
-{
-    override func prepareForInterfaceBuilder()
-    {
+@IBDesignable class BorderedLabel: UILabel {
+
+    override func prepareForInterfaceBuilder() {
         self.layer.borderWidth = 1.0
         self.layer.borderColor = UIColor.lightGray.cgColor
         self.layer.cornerRadius = 6.0
@@ -103,21 +94,18 @@ final class RoundCornerButton : UIButton
     }
 }
 
+@IBDesignable class BorderedView: UIView {
 
-@IBDesignable class BorderedView : UIView
-{
-    override func prepareForInterfaceBuilder()
-    {
+    override func prepareForInterfaceBuilder() {
         self.layer.borderWidth = 2.0
-        self.layer.borderColor = UIColor (named: "primary")?.cgColor
+        self.layer.borderColor = UIColor(named: "primary")?.cgColor
         self.layer.cornerRadius = 32.0
         self.clipsToBounds = true
     }
 }
 
-@IBDesignable class CanvasView : UIView
-{
-    
+@IBDesignable class CanvasView: UIView {
+
     @IBInspectable
     var borderWidth: CGFloat {
         set {
@@ -130,16 +118,12 @@ final class RoundCornerButton : UIButton
     }
 }
 
+@IBDesignable class RoundCornerView: UIView {
 
-
-
-@IBDesignable class RoundCornerView : UIView
-{
-    
     @IBInspectable
     var cornerRadius: CGFloat {
         set {
-            layer.cornerRadius = newValue 
+            layer.cornerRadius = newValue
         }
         get {
             return layer.cornerRadius
@@ -147,17 +131,15 @@ final class RoundCornerButton : UIButton
     }
 }
 
+extension UIButton {
 
-extension UIButton
-{
-    func roundCorners()
-    {
-        self.backgroundColor = UIColor (named: "primary")
+    func roundCorners() {
+        self.backgroundColor = UIColor(named: "primary")
         self.titleLabel?.font = AppSetting.buttonsFont
-        
+
         self.layer.cornerRadius = CGFloat(32.0)
         //        self.clipsToBounds = true
-        
+
         //        self.layer.shadowColor = UIColor(red: 0,
         //                                         green: 0,
         //                                         blue: 0,
@@ -170,15 +152,13 @@ extension UIButton
 }
 
 @IBDesignable
-final class RoundCornerTextField : UITextField
-{
-    
+final class RoundCornerTextField: UITextField {
+
     @IBInspectable
     var cornerRadius: CGFloat {
         set {
             self.font = AppSetting.textFieldsFont
-            
-            
+
             let paddingView: UIView = UIView(frame: CGRect(x: 0,
                                                            y: 0,
                                                            width: 10,
@@ -195,17 +175,14 @@ final class RoundCornerTextField : UITextField
     }
 }
 
+extension UITextField {
 
-
-extension UITextField
-{
-    func roundCorners()
-    {
-        self.backgroundColor = UIColor (named: "very light gray")
+    func roundCorners() {
+        self.backgroundColor = UIColor(named: "very light gray")
         self.font = AppSetting.textFieldsFont
-        
+
         self.layer.cornerRadius = CGFloat(8.0)
-        
+
         let paddingView: UIView = UIView(frame: CGRect(x: 0,
                                                        y: 0,
                                                        width: 20,
@@ -213,10 +190,9 @@ extension UITextField
         self.leftView = paddingView
         self.leftViewMode = .always
         self.clearButtonMode = .whileEditing
-        
-        
+
         //        self.clipsToBounds = true
-        
+
         //        self.layer.shadowColor = UIColor(red: 0,
         //                                         green: 0,
         //                                         blue: 0,
@@ -228,18 +204,15 @@ extension UITextField
     }
 }
 
+extension UITextView {
 
-
-extension UITextView
-{
-    func roundCorners()
-    {
-        self.backgroundColor = UIColor (named: "very light gray")
+    func roundCorners() {
+        self.backgroundColor = UIColor(named: "very light gray")
         self.font = AppSetting.textFieldsFont
-        
+
         self.layer.cornerRadius = CGFloat(8.0)
         //        self.clipsToBounds = true
-        
+
         //        self.layer.shadowColor = UIColor(red: 0,
         //                                         green: 0,
         //                                         blue: 0,
@@ -251,11 +224,8 @@ extension UITextView
     }
 }
 
+@IBDesignable class ShadowedButton: UIButton {
 
-
-
-@IBDesignable class ShadowedButton : UIButton
-{
     @IBInspectable
     var cornerRadius: CGFloat {
         get {
@@ -266,7 +236,6 @@ extension UITextView
         }
     }
 
-    
     @IBInspectable
     var shadowRadius: CGFloat {
         get {
@@ -276,7 +245,7 @@ extension UITextView
             layer.shadowRadius = newValue
         }
     }
-    
+
     @IBInspectable
     var shadowOpacity: Float {
         get {
@@ -286,7 +255,7 @@ extension UITextView
             layer.shadowOpacity = newValue
         }
     }
-    
+
     @IBInspectable
     var shadowOffset: CGSize {
         get {
@@ -296,7 +265,7 @@ extension UITextView
             layer.shadowOffset = newValue
         }
     }
-    
+
     @IBInspectable
     var shadowColor: UIColor? {
         get {
@@ -315,11 +284,8 @@ extension UITextView
     }
 }
 
+@IBDesignable class TitleLabel: UILabel {
 
-
-
-@IBDesignable class TitleLabel : UILabel
-{
     @IBInspectable
     var cornerRadius: CGFloat {
         get {
@@ -332,7 +298,6 @@ extension UITextView
         }
     }
 
-    
     @IBInspectable
     var shadowRadius: CGFloat {
         get {
@@ -342,7 +307,7 @@ extension UITextView
             layer.shadowRadius = newValue
         }
     }
-    
+
     @IBInspectable
     var shadowOpacity: Float {
         get {
@@ -352,7 +317,7 @@ extension UITextView
             layer.shadowOpacity = newValue
         }
     }
-    
+
     @IBInspectable
     override var shadowOffset: CGSize {
         get {
@@ -362,7 +327,7 @@ extension UITextView
             layer.shadowOffset = newValue
         }
     }
-    
+
     @IBInspectable
     override var shadowColor: UIColor? {
         get {
@@ -380,4 +345,3 @@ extension UITextView
         }
     }
 }
-

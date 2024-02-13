@@ -1,26 +1,23 @@
 import Foundation
 import UIKit
 
+class AppData {
 
-class AppData
-{
     //    private init() {}
     //    static let shared = AppData()
-    
+
     static var curProject: Project?
-    
+
     // TODO: projects should be fetched from disk/online
     static var projects: Array<Project> = []
-    
-    
+
     static var user: User!
-    
-    
+
 //    static func initialiStuff ()
 //    {
 //        myProjects = [:]
 //    }
-//    
+//
 //    static let iconsArr = [
 //    "137646854.jpg",
 //    "485745110-612x612.jpg",
@@ -65,16 +62,8 @@ class AppData
 //    "24-240504_transparent-batman-lego-png-lego-cartoon-clipart-batman.png",
 //    "awervq34f.jpg",
 //    "istockphoto-505654903-170x170.jpg"]
-    
+
 //    static var story = ""
 //    static var shots: Array<Shot> = []
-    
 
-
-    
 }
-
-
-
-
-

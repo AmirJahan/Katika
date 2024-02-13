@@ -1,6 +1,5 @@
 import Foundation
 
-protocol ProcessNavigateDelegate
-{
-    func navigateToStep (processStep: ProcessStep)
+protocol ProcessNavigateDelegate {
+    func navigateToStep(processStep: ProcessStep)
 }

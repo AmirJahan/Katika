@@ -1,8 +1,7 @@
 import UIKit
 import Colorful
 
-
 protocol ColorPickerDelegate {
-    func newColorIs (color: UIColor)
 
+    func newColorIs(color: UIColor)
 }

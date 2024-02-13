@@ -1,8 +1,8 @@
 import UIKit
 import Colorful
 
-class PopoverColorPicker: UIViewController
-{
+class PopoverColorPicker: UIViewController {
+
     @IBOutlet weak var colorPicker: ColorPicker!
     var startColor = UIColor.white
     var colorDelegate: ColorPickerDelegate!
@@ -18,8 +18,7 @@ class PopoverColorPicker: UIViewController
         handleColorChanged(picker: colorPicker)
     }
 
-    @objc func handleColorChanged(picker: ColorPicker)
-    {
+    @objc func handleColorChanged(picker: ColorPicker) {
         self.colorDelegate.newColorIs(color: picker.color)
     }
 }

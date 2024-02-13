@@ -1,6 +1,5 @@
 import Foundation
 
-protocol SidebarProcessDelegate
-{
-    func popItOver ()
+protocol SidebarProcessDelegate {
+    func popItOver()
 }

@@ -1,9 +1,7 @@
 import UIKit
 
-extension Export_VC : ExportCommentsDelegate
-{
-    func commentsUpdated()
-    {
+extension Export_VC: ExportCommentsDelegate {
+    func commentsUpdated() {
         loadComments()
     }
 }

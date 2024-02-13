@@ -1,6 +1,5 @@
 import Foundation
 
-protocol ExportCommentsDelegate
-{
-    func commentsUpdated ()
+protocol ExportCommentsDelegate {
+    func commentsUpdated()
 }

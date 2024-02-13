@@ -1,13 +1,10 @@
 import UIKit
-import  AVFoundation
+import AVFoundation
 
-extension Export_VC
-{
-    func play ()
-        
-    {
+extension Export_VC {
+    func play() {
         player!.play()
-        
+
         playTimer = Timer.scheduledTimer(timeInterval: 0.01,
                                          target: self,
                                          selector: #selector(playFrameByFrame),
@@ -15,4 +12,3 @@ extension Export_VC
                                          repeats: true)
     }
 }
-

@@ -1,10 +1,7 @@
 import Foundation
 
-
-enum ArtworkType: String
-{
+enum ArtworkType: String {
     case svg
     case img
     case text
 }
-
