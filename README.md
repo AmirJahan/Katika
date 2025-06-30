@@ -92,6 +92,4 @@ Katika/
 
 ---
 
-## Katika - Motion Graphics Video Creator Image Generation Prompt
 
-A creative studio workspace depicting motion graphics video creation on an iPad in landscape orientation. The screen displays a timeline interface with multiple tracks showing keyframe diamonds marking animation points for position, rotation, scale, and opacity. Colorful vector graphics elements—shapes, icons, text blocks—are arranged on a canvas preview area, some with visible motion paths showing their animated trajectories. Script pages with highlighted lines float beside the device, connected to corresponding shots on a visual shotlist. A microphone icon indicates voice-over recording capability with audio waveforms visualized. Training module cards fan out showing different learning stages: Script, Graphics, Motion, Export. The background transitions from a gradient of creative purples and teals to represent artistic expression meeting technical precision. Film strip elements and play button icons add video production context. Animated characters or objects appear mid-motion with ghosted position trails. Style: educational app promotional art, creative software interface showcase, Apple design language inspired, professional yet approachable, emphasizing the journey from learning to creating polished motion graphics.
