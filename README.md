@@ -2,7 +2,7 @@
 
 An iOS application for learning and creating motion graphics videos with comprehensive training modules and project management tools.
 
-![SC]([https://github.com/The-Odd-Institute/Multiplatform_SVG_Parser/blob/main/svg_parser.png?raw=true](https://github.com/AmirJahan/Katika/blob/main/sc.png))
+![](https://github.com/AmirJahan/Katika/blob/main/sc.png)
 
 
 ## Overview
