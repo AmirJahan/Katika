@@ -1,6 +1,9 @@
 # Katika - Motion Graphics Video Creator
 
-An iOS educational application for learning and creating motion graphics videos with comprehensive training modules and project management tools.
+An iOS application for learning and creating motion graphics videos with comprehensive training modules and project management tools.
+
+![](https://github.com/AmirJahan/Katika/blob/main/sc.png)
+
 
 ## Overview
 
